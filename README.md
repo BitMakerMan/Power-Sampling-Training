@@ -262,10 +262,10 @@ pip install -e .
 python examples/understand_power_sampling.py
 ```
 
-### Complete Algorithm Flow
+### Complete Algorithm Flow:
 ![Power Sampling Algorithm](Doc/PowerSampling_Diagram.png)
 
-### Mathematical Process
+### Mathematical Process:
 ![Mathematical Flow](Doc/PowerSampling_Mathematical_Flow.png)
 
 
