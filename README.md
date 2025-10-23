@@ -319,11 +319,18 @@ PowerSampling/
 │   ├── power_sampling.py        # Core PowerSampling algorithm
 │   └── cli.py                   # Command line interface
 ├── examples/
-│   └── understand_power_sampling.py  # Complete educational demo
-├── models--EleutherAI--gpt-neo-125M/  # Local model cache (optional)
-├── setup.py                      # Package setup
-├── requirements.txt             # Dependencies
-└── README.md                    # This file
+│   ├── understand_power_sampling.py           # Complete educational demo
+│   ├── understand_power_sampling_multimodel_test.py  # Multi-model testing
+│   ├── test_model_selection.py                # Model selection validation
+│   └── understand_power_sampling_old.py       # Backup version
+├── Doc/
+│   ├── PowerSampling_Diagram.png              # Complete algorithm flow
+│   ├── PowerSampling_Mathematical_Flow.png     # Mathematical process
+│   └── PowerSampling_Comparison.png            # Standard vs Power Sampling
+├── models--EleutherAI--gpt-neo-125M/          # Local model cache (optional)
+├── setup.py                                        # Package setup
+├── requirements.txt                               # Dependencies
+└── README.md                                      # This file
 ```
 
 ## 📊 Use Cases
