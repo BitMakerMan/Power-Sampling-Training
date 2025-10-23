@@ -19,6 +19,9 @@ Power Sampling is an advanced algorithm that improves the quality and coherence 
 
 ## 🧠 How Power Sampling Works - Understanding the Algorithm
 
+### Complete Algorithm Flow
+![Power Sampling Algorithm](Doc/PowerSampling_Diagram.png)
+
 ### 🔬 The Metropolis-Hastings Method
 
 Power Sampling uses the Metropolis-Hastings algorithm (a technique from computational statistics) to iteratively improve text quality:
@@ -41,6 +44,9 @@ Power Sampling uses the Metropolis-Hastings algorithm (a technique from computat
 - Repeat the process multiple times
 - Each iteration typically improves the text
 - More iterations = better quality (but slower)
+
+### Mathematical Process
+![Mathematical Flow](Doc/PowerSampling_Mathematical_Flow.png)
 
 ### 📊 Mathematical Foundation
 
@@ -170,39 +176,139 @@ response = power_sample(
 )
 ```
 
-## 📚 Educational Example
+## 📚 Educational Examples
 
-The `examples/` directory contains a comprehensive educational demo to help you understand Power Sampling:
+The `examples/` directory contains comprehensive educational demos to help you understand Power Sampling:
 
-### Complete Educational Demo (`examples/understand_power_sampling.py`)
-**Perfect for learning!** This single demo shows everything:
+### 1. Complete Educational Demo (`examples/understand_power_sampling.py`)
+**Perfect for learning!** This interactive demo shows everything:
 - ✅ Standard vs Power Sampling comparison
 - ✅ Different parameter effects (alpha values)
 - ✅ Step-by-step process visualization
 - ✅ Multiple prompt examples
 - ✅ Detailed theory explanations
-- ✅ Works with local model for offline usage
+- ✅ Model selection with 6 pre-configured options
+- ✅ Works with local models for offline usage
 
 ```bash
 cd examples
 python understand_power_sampling.py
+# Select model (1-7) when prompted
 ```
 
-This demo is **self-contained** and provides a complete understanding of Power Sampling through practical examples and visual demonstrations.
+### 2. Multi-Model Test (`examples/understand_power_sampling_multimodel_test.py`)
+**Automated testing across multiple models** - This script runs the same educational demo with automatic model selection for testing purposes:
+- Tests different model performance
+- Compares Power Sampling effectiveness across models
+- Demonstrates parameter adaptation based on model size
+- No user input required - fully automated
+
+```bash
+cd examples
+python understand_power_sampling_multimodel_test.py
+```
+
+### 3. Model Selection Test (`examples/test_model_selection.py`)
+**Quick validation script** - Tests the model selection functionality:
+- Validates local model detection
+- Tests HuggingFace download capability
+- Demonstrates automatic parameter adjustment
+- Fast testing with minimal output
+
+```bash
+cd examples
+python test_model_selection.py
+```
+
+### Example Features
+
+All examples include:
+- **Interactive Learning**: Step-by-step explanations of the Metropolis-Hastings algorithm
+- **Real Demonstrations**: See Power Sampling improving text quality in real-time
+- **Parameter Guidance**: Understand how alpha, steps, and block_size affect results
+- **Multiple Models**: Test with different LLM sizes to see performance differences
+- **Error Handling**: Graceful fallbacks when models encounter issues
+- **Educational Theory**: Clear explanations of why Power Sampling works
+
+### Model Performance Comparison
+
+Try different models to see how Power Sampling effectiveness varies:
+
+| Model | Parameters | Power Sampling Benefit |
+|-------|------------|----------------------|
+| GPT-2 (124M) | 124M | Basic improvement |
+| GPT-Neo 125M | 125M | Moderate improvement |
+| DialoGPT Medium | 345M | Good coherence boost |
+| TinyLlama 1.1B | 1.1B | **Best for education** |
+| BLOOM-560M | 560M | Strong reasoning gains |
+| OPT-1.3B | 1.3B | Excellent refinement |
+
+**Recommendation**: Use TinyLlama 1.1B for the best educational experience - it shows clear Power Sampling improvements while remaining fast enough for interactive demos.
+
+### Model Selection & Performance
+
+The educational demo now supports multiple models from HuggingFace:
+
+**Available Models:**
+1. **GPT-2 (124M)** - Fast, basic reasoning
+2. **GPT-Neo 125M** - Better logic (default)
+3. **DialoGPT Medium (345M)** - Conversational
+4. **TinyLlama 1.1B** - Small but capable
+5. **BLOOM-560M** - Good reasoning
+6. **OPT-1.3B** - Open Pretrained
+7. **Custom model** - Any HuggingFace model
+
+**Usage:**
+```bash
+cd examples
+python understand_power_sampling.py
+# Select model when prompted (1-7)
+```
+
+### Standard vs Power Sampling
+![Comparison](Doc/PowerSampling_Comparison.png)
 
 ### Example Output Comparison
 
-**Standard LLM Generation:**
+**Standard LLM Generation (125M model):**
 ```
 What is artificial intelligence?
-In academia, artificial intelligence is a kind of computational technique that attempts to solve many problems...
+It depends on the internet. On mobile, for example, it can be seen as a platform to develop new technology...
 ```
 
 **Power Sampling (Improved):**
 ```
 What is artificial intelligence?
-As a technology, it can be used for an understanding of the human brain, but it doesn't seem likely to be used for "human intelligence"...
+By default, the most advanced form of artificial intelligence (AI) is computer vision, in...
 ```
+
+**Note:** Small models (125M parameters) have limited reasoning capabilities. For better results, use larger models like TinyLlama 1.1B or OPT-1.3B when testing Power Sampling improvements.
+
+### ⚡ **Important Reality Check: What Power Sampling Can and Cannot Do**
+
+**🎯 Conclusione dai Test Realistici:**
+
+I risultati cambiano **dal giorno alla notte** a seconda del modello utilizzato. Power Sampling **non è magia** - se il modello è limitato, non si può tirare sangue da una rapa.
+
+**🧠 Power Sampling è:**
+- ✅ **Filtro di coerenza iterativo** che migliora ciò che il modello sa già fare
+- ✅ **Guardia anti-stupidità** che previene risposte completamente illogiche
+- ✅ **Potenziatore** per modelli "sapienti" che già hanno conoscenze di base
+- ✅ **Rifinitore** che rende il testo più strutturato e coerente
+
+**🚫 Power Sampling NON è:**
+- ❌ **Intelligenza artificiale** che rende stupidi → intelligenti
+- ❌ **Conoscenza extra** che insegna cose nuove al modello
+- ❌ **Pillola magica** che trasforma un modello limitato in un esperto
+- ❌ **Soluzione universale** per tutti i problemi di reasoning
+
+**💡 La Verità:**
+Power Sampling non può rendere "intelligente" un modello limitato, ma può **impedirgli di essere "stupido"** 🙂. Per modelli con capacità di base (1B+ parametri), diventa uno strumento potente. Per modelli molto piccoli (125M), aiuta principalmente a evitare le risposte peggiori.
+
+**🎪 Test Consigliati:**
+- **125M modelli**: Aspettati miglioramenti marginali, principalmente coerenza
+- **345M+ modelli**: Inizia a vedere benefici reali di ragionamento
+- **1B+ modelli**: **Massimo beneficio** - dove Power Sampling brilla davvero
 
 ## 🏗️ Project Structure
 
@@ -261,15 +367,6 @@ pip install -e .
 # Run educational demo
 python examples/understand_power_sampling.py
 ```
-
-### Complete Algorithm Flow
-![Power Sampling Algorithm](Doc/PowerSampling_Diagram.png)
-
-### Mathematical Process
-![Mathematical Flow](Doc/PowerSampling_Mathematical_Flow.png)
-
-### Standard vs Power Sampling
-![Comparison](Doc/PowerSampling_Comparison.png)
 
 ## 📄 License
 
