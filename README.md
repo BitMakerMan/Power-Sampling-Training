@@ -46,7 +46,7 @@ Power Sampling uses the Metropolis-Hastings algorithm (a technique from computat
 - More iterations = better quality (but slower)
 
 ### Mathematical Process
-![Mathematical Flow](Doc/_Mathematical_Flow.png)
+![Mathematical Flow](Doc/PowerSampling_Mathematical_Flow.png)
 
 ### 📊 Mathematical Foundation
 
