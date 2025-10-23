@@ -262,6 +262,10 @@ pip install -e .
 python examples/understand_power_sampling.py
 ```
 
+### Complete Algorithm Flow
+![Power Sampling Algorithm](Doc/PowerSampling_Diagram.png)
+
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
