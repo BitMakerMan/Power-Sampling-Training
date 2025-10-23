@@ -213,7 +213,6 @@ PowerSampling/
 │   ├── power_sampling.py        # Core PowerSampling algorithm
 │   └── cli.py                   # Command line interface
 ├── examples/
-│   ├── test_lightweight.py      # Basic functionality test
 │   └── understand_power_sampling.py  # Complete educational demo
 ├── models--EleutherAI--gpt-neo-125M/  # Local model cache (optional)
 ├── setup.py                      # Package setup
