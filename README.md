@@ -321,8 +321,7 @@ PowerSampling/
 ├── examples/
 │   ├── understand_power_sampling.py           # Complete educational demo
 │   ├── understand_power_sampling_multimodel_test.py  # Multi-model testing
-│   ├── test_model_selection.py                # Model selection validation
-│   └── understand_power_sampling_old.py       # Backup version
+│   └── test_model_selection.py                # Model selection validation
 ├── Doc/
 │   ├── PowerSampling_Diagram.png              # Complete algorithm flow
 │   ├── PowerSampling_Mathematical_Flow.png     # Mathematical process
