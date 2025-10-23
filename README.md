@@ -46,7 +46,7 @@ Power Sampling uses the Metropolis-Hastings algorithm (a technique from computat
 - More iterations = better quality (but slower)
 
 ### Mathematical Process
-![Mathematical Flow](Doc/PowerSampling_Mathematical_Flow.png)
+![Mathematical Flow](Doc/_Mathematical_Flow.png)
 
 ### 📊 Mathematical Foundation
 
@@ -387,7 +387,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions about this demo version:
-- **GitHub:** https://github.com/BitMakerMan/PowerSampling
+- **GitHub:** https://github.com/BitMakerMan/Power-Sampling-Training
 
 For the original project:
 - **GitHub:** https://github.com/aakaran
