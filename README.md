@@ -286,29 +286,29 @@ By default, the most advanced form of artificial intelligence (AI) is computer v
 
 ### ⚡ **Important Reality Check: What Power Sampling Can and Cannot Do**
 
-**🎯 Conclusione dai Test Realistici:**
+**🎯 Conclusion from Realistic Testing:**
 
-I risultati cambiano **dal giorno alla notte** a seconda del modello utilizzato. Power Sampling **non è magia** - se il modello è limitato, non si può tirare sangue da una rapa.
+Results vary **dramatically** depending on the model used. Power Sampling **is not magic** - if the model is limited, you can't get blood from a stone.
 
-**🧠 Power Sampling è:**
-- ✅ **Filtro di coerenza iterativo** che migliora ciò che il modello sa già fare
-- ✅ **Guardia anti-stupidità** che previene risposte completamente illogiche
-- ✅ **Potenziatore** per modelli "sapienti" che già hanno conoscenze di base
-- ✅ **Rifinitore** che rende il testo più strutturato e coerente
+**🧠 Power Sampling IS:**
+- ✅ **Iterative coherence filter** that improves what the model already knows
+- ✅ **Anti-stupidity guard** that prevents completely illogical responses
+- ✅ **Enhancer** for "knowledgeable" models that already have baseline capabilities
+- ✅ **Refiner** that makes text more structured and coherent
 
-**🚫 Power Sampling NON è:**
-- ❌ **Intelligenza artificiale** che rende stupidi → intelligenti
-- ❌ **Conoscenza extra** che insegna cose nuove al modello
-- ❌ **Pillola magica** che trasforma un modello limitato in un esperto
-- ❌ **Soluzione universale** per tutti i problemi di reasoning
+**🚫 Power Sampling is NOT:**
+- ❌ **Artificial intelligence** that turns stupid → smart
+- ❌ **Extra knowledge** that teaches new things to the model
+- ❌ **Magic pill** that transforms a limited model into an expert
+- ❌ **Universal solution** for all reasoning problems
 
-**💡 La Verità:**
-Power Sampling non può rendere "intelligente" un modello limitato, ma può **impedirgli di essere "stupido"** 🙂. Per modelli con capacità di base (1B+ parametri), diventa uno strumento potente. Per modelli molto piccoli (125M), aiuta principalmente a evitare le risposte peggiori.
+**💡 The Truth:**
+Power Sampling cannot make a limited model "intelligent," but it can **prevent it from being "stupid"** 🙂. For models with baseline capabilities (1B+ parameters), it becomes a powerful tool. For very small models (125M), it mainly helps avoid worse responses.
 
-**🎪 Test Consigliati:**
-- **125M modelli**: Aspettati miglioramenti marginali, principalmente coerenza
-- **345M+ modelli**: Inizia a vedere benefici reali di ragionamento
-- **1B+ modelli**: **Massimo beneficio** - dove Power Sampling brilla davvero
+**🎪 Recommended Testing:**
+- **125M models**: Expect marginal improvements, mainly coherence
+- **345M+ models**: Start seeing real reasoning benefits
+- **1B+ models**: **Maximum benefit** - where Power Sampling truly shines
 
 ## 🏗️ Project Structure
 
